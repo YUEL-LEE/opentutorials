@@ -25,6 +25,27 @@
         margin: 0;
         padding: 20px;
     }
+    #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    #grid ol {
+        padding-left: 32px;
+    }
+    #article{
+        padding-left: 25px;
+    }
+    @media(max-width: 800px) {
+        ol {
+            border-right: none;
+        }
+        #grid{
+            display: block;
+        }
+        h1 {
+            border-bottom: none;
+        }
+    }
 </style>
 </head>
 
@@ -35,11 +56,25 @@
 <li></li> : list, 목차 표현
 <ul></ul> : unordered list, 순서 구분이 없는 목록 구분 경계 태그
 <ol></ol> : ordered list, 순서가 있는 목록 구분 경계 태그 -->
-<ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-</ol>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">    
+        <h2>WEB</h2> <!-- <h1></h1> : 제목 1  -->
+                
+        <!-- 
+        <p></p> : 단락, 단락 간 간격 고정 
+        <a href="(link)" target="_blank" title="(title)"></a> : a -> anchor, href -> hypertext reference/ target="_blank" : 새 창에서 열기
+        -->
+        <p>The World Wide Web (WWW), commonly known as the Web, is an information system enabling documents and other web resources to be accessed over the Internet.
+            Documents and downloadable media are made available to the network through web servers and can be accessed by programs such as web browsers. 
+            Servers and resources on the World Wide Web are identified and located through character strings called uniform resource locators (URLs). 
+            The original and still very common document type is a web page formatted in Hypertext Markup Language (HTML). </p>
+    </div>
+</div> 
 </body>
-    
+   
 </html>
