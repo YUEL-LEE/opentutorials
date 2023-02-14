@@ -4,49 +4,7 @@
 <head> <!-- <head></head> :본문을 설명하는 태그 -->
 <title>WEB1 - html</title> <!-- <title></title> : 웹 페이지 제목(탭에 나타나는 이름), 검색 엔진이 웹 페이지를 분석할 때 중요한 정보 -->
 <meta charset="utf-8"> <!-- 웹페이지가 저장된 문자 표현 방식/웹브라우저가 웹페이지를 해석하는 방식을 utf-8로 일치시키기 -->
-<style>
-    body {
-        margin: 0;
-    }
-    a {
-        color : black;
-        text-decoration: none;
-    }
-    h1 {
-        font-size: 45px;
-        text-align: center;
-        border-bottom: 1px solid gray;
-        margin: 0; 
-        padding: 20px;
-    }
-    ol {
-        border-right: 1px solid gray;
-        width: 100px;
-        margin: 0;
-        padding: 20px;
-    }
-    #grid{
-        display: grid;
-        grid-template-columns: 150px 1fr;
-    }
-    #grid ol {
-        padding-left: 32px;
-    }
-    #article{
-        padding-left: 25px;
-    }
-    @media(max-width: 800px) {
-        ol {
-            border-right: none;
-        }
-        #grid{
-            display: block;
-        }
-        h1 {
-            border-bottom: none;
-        }
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body><!-- <body></body> : 본문 -->
@@ -65,7 +23,7 @@
     </ol>
     <div id="article">    
         <h2>HTML</h2> <!-- <h1></h1> : 제목 1  -->
-                
+
         <!-- 
         <p></p> : 단락, 단락 간 간격 고정 
         <a href="(link)" target="_blank" title="(title)"></a> : a -> anchor, href -> hypertext reference/ target="_blank" : 새 창에서 열기
